@@ -509,6 +509,25 @@ select#categoryFilter, select#sortSelect{padding:10px 12px;border-radius:12px;bo
   .os-steps{overflow-x:auto;padding-bottom:4px}
   .about-stats{padding:20px 16px;gap:12px}
   .footer-bottom{flex-direction:column;align-items:flex-start}
+  /* Newsletter mobile */
+  .newsletter{padding:48px 0}
+  .newsletter-title{font-size:1.5rem}
+  .newsletter-form{max-width:100%;width:100%}
+  .newsletter-input-row{flex-wrap:wrap;gap:8px;padding:10px 12px}
+  .newsletter-input-row input[type="email"]{width:100%;min-width:0}
+  .newsletter-input-row .btn-primary{width:100%;justify-content:center;text-align:center;border-radius:10px}
+  /* Card grid single column on very small screens */
+  .card-grid{grid-template-columns:1fr}
+  /* Menu hero stack on mobile */
+  .menu-hero-inner{flex-direction:column;align-items:flex-start}
+  /* About mission single col */
+  .about-mission{grid-template-columns:1fr}
+  /* Checkout actions stack */
+  .checkout-actions{flex-direction:column}
+  /* Contact hero heading */
+  .contact-hero-inner h1{font-size:1.7rem}
+  /* Offer cards single col */
+  .offers-grid{grid-template-columns:1fr}
 }
 
 /* Food details layout */
