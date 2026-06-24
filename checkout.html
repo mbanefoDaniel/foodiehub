@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FoodieHub — Checkout</title>
+  <meta name="description" content="Enter your details to complete the FoodieHub order.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/IMG-20260611-WA0042.jpg" type="image/jpeg">
+  <meta name="theme-color" content="#FF7A00">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="index.html"><img class="logo" src="assets/images/IMG-20260611-WA0042.jpg" alt="FoodieHub logo"><span class="brand-text">FoodieHub</span></a>
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle5" aria-expanded="false">☰</button>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html" class="cart-link">Cart <span id="cart-count-6">0</span></a></li>
+        </ul>
+      </nav>
+      <div class="controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="theme-icon theme-icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-icon theme-icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <a class="btn-order" href="menu.html">Order Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="os-hero">
+    <div class="container">
+      <nav class="os-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        <a href="cart.html">Cart</a>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        <a href="order-summary.html">Review</a>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        <span>Checkout</span>
+      </nav>
+      <h1 class="os-title">Complete Your Order</h1>
+      <p class="os-subtitle">Fill in your delivery details and choose how you'd like to pay.</p>
+      <div class="os-steps">
+        <div class="os-step os-step--done">
+          <div class="os-step-dot">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <span>Cart</span>
+        </div>
+        <div class="os-step-line os-step-line--done"></div>
+        <div class="os-step os-step--done">
+          <div class="os-step-dot">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <span>Review</span>
+        </div>
+        <div class="os-step-line os-step-line--done"></div>
+        <div class="os-step os-step--active">
+          <div class="os-step-dot"></div>
+          <span>Checkout</span>
+        </div>
+        <div class="os-step-line"></div>
+        <div class="os-step">
+          <div class="os-step-dot"></div>
+          <span>Done</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Checkout Content -->
+  <main class="container co-main">
+    <div class="co-grid">
+
+      <!-- Left: Form -->
+      <div class="co-form-col">
+
+        <!-- Delivery details -->
+        <div class="co-card">
+          <div class="co-card-header">
+            <div class="co-card-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h2 class="co-card-title">Delivery Details</h2>
+          </div>
+          <form id="checkoutForm" novalidate>
+            <div class="co-form-row">
+              <div class="co-field">
+                <label class="co-label" for="co-name">Full Name</label>
+                <input class="co-input" id="co-name" name="name" type="text" placeholder="e.g. Chidi Onyili" autocomplete="name" required>
+              </div>
+              <div class="co-field">
+                <label class="co-label" for="co-phone">Phone Number</label>
+                <input class="co-input" id="co-phone" name="phone" type="tel" placeholder="e.g. 08124393536" autocomplete="tel" required>
+              </div>
+            </div>
+            <div class="co-field">
+              <label class="co-label" for="co-email">Email Address</label>
+              <input class="co-input" id="co-email" name="email" type="email" placeholder="e.g. you@example.com" autocomplete="email" required>
+            </div>
+            <div class="co-field">
+              <label class="co-label" for="co-address">Delivery Address</label>
+              <textarea class="co-input co-textarea" id="co-address" name="address" placeholder="Enter your full street address, city & state" autocomplete="street-address" required></textarea>
+            </div>
+            <div class="co-field">
+              <label class="co-label" for="co-note">Delivery Note <span class="co-optional">(optional)</span></label>
+              <input class="co-input" id="co-note" name="note" type="text" placeholder="e.g. Call when nearby, gate code 1234">
+            </div>
+          </form>
+        </div>
+
+        <!-- Payment method -->
+        <div class="co-card">
+          <div class="co-card-header">
+            <div class="co-card-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <h2 class="co-card-title">Payment Method</h2>
+          </div>
+          <div class="co-pay-options" id="coPayOptions">
+            <label class="co-pay-option co-pay-option--selected" data-val="card">
+              <input type="radio" name="payment" value="card" checked hidden>
+              <div class="co-pay-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              </div>
+              <div class="co-pay-info">
+                <span class="co-pay-name">Pay with Card</span>
+                <span class="co-pay-desc">Visa, Mastercard, Verve</span>
+              </div>
+              <div class="co-pay-check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+            </label>
+            <label class="co-pay-option" data-val="transfer">
+              <input type="radio" name="payment" value="transfer" hidden>
+              <div class="co-pay-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+              </div>
+              <div class="co-pay-info">
+                <span class="co-pay-name">Bank Transfer</span>
+                <span class="co-pay-desc">Direct bank payment</span>
+              </div>
+              <div class="co-pay-check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+            </label>
+            <label class="co-pay-option" data-val="cash">
+              <input type="radio" name="payment" value="cash" hidden>
+              <div class="co-pay-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>
+              </div>
+              <div class="co-pay-info">
+                <span class="co-pay-name">Cash on Delivery</span>
+                <span class="co-pay-desc">Pay when your order arrives</span>
+              </div>
+              <div class="co-pay-check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Order summary -->
+      <aside class="co-sidebar">
+        <div class="co-card co-summary-card">
+          <div class="co-card-header">
+            <div class="co-card-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <h2 class="co-card-title">Order Summary</h2>
+          </div>
+          <div id="co-items-list" class="co-summary-items"></div>
+          <div id="co-breakdown" class="co-breakdown"></div>
+          <button class="btn-primary co-place-btn" type="submit" form="checkoutForm">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Place Order
+          </button>
+          <div class="co-secure-row">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Secured &amp; encrypted checkout</span>
+          </div>
+        </div>
+        <a class="co-back-link" href="order-summary.html">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          Back to Order Summary
+        </a>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Success modal -->
+  <div id="modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content co-modal">
+      <div class="co-modal-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </div>
+      <h3 id="modalTitle" class="co-modal-title">Order Placed!</h3>
+      <p class="co-modal-text">Thanks for your order — we'll start preparing it right away and deliver it fresh to your door.</p>
+      <div class="co-modal-eta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Estimated delivery: <strong>30–45 mins</strong>
+      </div>
+      <button class="btn-primary co-modal-btn" id="modalClose">Continue Shopping</button>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <script src="assets/js/app.js" defer></script>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" style="margin-bottom:10px;display:inline-flex">
+            <img class="logo" src="assets/images/IMG-20260611-WA0042.jpg" alt="FoodieHub logo">
+            <span class="brand-text">FoodieHub</span>
+          </a>
+          <p class="footer-tagline">Authentic Nigerian meals &amp; global favourites, delivered fast.</p>
+          <div class="footer-socials">
+            <a class="footer-social-btn" href="https://www.tiktok.com/@chidiebereonyili" target="_blank" rel="noopener" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+            </a>
+            <a class="footer-social-btn" href="https://wa.me/2348124393536" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.532 5.855L.057 23.882l6.198-1.625A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.002-1.368l-.359-.214-3.68.965.981-3.595-.234-.371A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+            </a>
+            <a class="footer-social-btn" href="mailto:chidiebereonyili@gmail.com" aria-label="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="menu.html?cat=Nigerian">Nigerian</a></li>
+            <li><a href="menu.html?cat=Grills">Grills</a></li>
+            <li><a href="menu.html?cat=Snacks">Snacks</a></li>
+            <li><a href="menu.html?cat=Desserts">Desserts</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Contact</h5>
+          <ul>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.91-1.84a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 15z"/></svg>
+              08124393536
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              chidiebereonyili@gmail.com
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Uli, Anambra State
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 FoodieHub. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

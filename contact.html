@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FoodieHub — Contact</title>
+  <meta name="description" content="Get in touch with FoodieHub — orders, partnerships, and support.">
+  <meta property="og:title" content="FoodieHub — Contact">
+  <meta property="og:description" content="Get in touch with FoodieHub — orders, partnerships, and support.">
+  <meta property="og:image" content="assets/images/IMG-20260611-WA0042.jpg">
+  <meta property="og:url" content="http://localhost:8000/contact.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="FoodieHub — Contact">
+  <meta name="twitter:description" content="Get in touch with FoodieHub — orders, partnerships, and support.">
+  <link rel="canonical" href="http://localhost:8000/contact.html">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/IMG-20260611-WA0042.jpg" type="image/jpeg">
+  <link rel="shortcut icon" href="assets/images/IMG-20260611-WA0042.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="assets/images/IMG-20260611-WA0042.jpg">
+  <link rel="manifest" href="assets/manifest.json">
+  <meta name="theme-color" content="#FF7A00">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="index.html"><img class="logo" src="assets/images/IMG-20260611-WA0042.jpg" alt="FoodieHub logo"><span class="brand-text">FoodieHub</span></a>
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle4" aria-expanded="false">☰</button>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html" class="cart-link">Cart <span id="cart-count-8">0</span></a></li>
+        </ul>
+      </nav>
+      <div class="controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="theme-icon theme-icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-icon theme-icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <a class="btn-order" href="menu.html">Order Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="contact-hero">
+      <div class="container contact-hero-inner">
+        <span class="about-label">Get in touch</span>
+        <h1>We'd love to hear<br>from you</h1>
+        <p class="muted">Questions, feedback, or partnership inquiries — our team is ready to help.</p>
+      </div>
+    </section>
+
+    <!-- Grid -->
+    <section class="container contact-body">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="contact-form-card">
+          <h2>Send us a message</h2>
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contactName">Full name</label>
+              <input id="contactName" name="name" type="text" placeholder="e.g. Chidinma Obi" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email address</label>
+              <input id="contactEmail" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input id="contactSubject" name="subject" type="text" placeholder="How can we help?">
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" rows="5" placeholder="Tell us more…" required></textarea>
+            </div>
+            <button class="btn-primary contact-submit" type="submit">
+              Send message
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Info cards -->
+        <aside class="contact-info-col">
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <strong>Phone</strong>
+              <p class="muted">08124393536</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 8.5L12 13L21 8.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <p class="muted">chidiebereonyili@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <div>
+              <strong>Address</strong>
+              <p class="muted">Uli, Anambra State</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <strong>Opening hours</strong>
+              <p class="muted">Mon – Sun: 9 am – 10 pm</p>
+            </div>
+          </div>
+
+          <div class="contact-social-row">
+            <a class="social-chip" href="https://www.tiktok.com/@chidiebereonyili" target="_blank" rel="noopener" aria-label="TikTok">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+              TikTok
+            </a>
+            <a class="social-chip" href="https://wa.me/2348124393536" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.532 5.855L.057 23.882l6.198-1.625A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.002-1.368l-.359-.214-3.68.965.981-3.595-.234-.371A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+              WhatsApp
+            </a>
+            <a class="social-chip" href="mailto:chidiebereonyili@gmail.com" aria-label="Email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" style="margin-bottom:10px;display:inline-flex">
+            <img class="logo" src="assets/images/IMG-20260611-WA0042.jpg" alt="FoodieHub logo">
+            <span class="brand-text">FoodieHub</span>
+          </a>
+          <p class="footer-tagline">Authentic Nigerian meals &amp; global favourites, delivered fast.</p>
+          <div class="footer-socials">
+
+
+            <a class="footer-social-btn" href="https://www.tiktok.com/@chidiebereonyili" target="_blank" rel="noopener" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg></a>
+            <a class="footer-social-btn" href="https://wa.me/2348124393536" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.532 5.855L.057 23.882l6.198-1.625A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.002-1.368l-.359-.214-3.68.965.981-3.595-.234-.371A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h5>Explore</h5>
+          <ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <div class="footer-links">
+          <h5>Categories</h5>
+          <ul><li><a href="menu.html?cat=Nigerian">Nigerian</a></li><li><a href="menu.html?cat=Grills">Grills</a></li><li><a href="menu.html?cat=Snacks">Snacks</a></li><li><a href="menu.html?cat=Desserts">Desserts</a></li></ul>
+        </div>
+        <div class="footer-links">
+          <h5>Contact</h5>
+          <ul>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.91-1.84a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 15z"/></svg>08124393536</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>chidiebereonyili@gmail.com</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Uli, Anambra State</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FoodieHub. All rights reserved.</p>
+        <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "FoodieHub",
+  "short_name": "FoodieHub",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF7A00",
+  "icons": [
+    {
+      "src": "assets/images/IMG-20260611-WA0042.jpg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
